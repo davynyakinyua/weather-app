@@ -22,13 +22,88 @@ body {
 
 }
 
+/* styles for the header container */
 .header {
+
+    display:grid;
+    grid-template-columns:50% 20% 20%;
+    gap:0.5rem;
+}
+
+
+.heading {
     display:flex;
     justify-content: center;
     align-items: center;
     font-size:1.5rem;
     font-weight: bold;
+    grid-column:1/2;
 }
+
+#current-stats {
+    grid-column:2/3;
+    display:grid;
+    grid-template-rows:repeat(2, 1fr);
+}
+
+.current-location, #location-container {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles for form container */
+#form-container{
+    grid-column:3/4;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+form {
+    width:80%;
+}
+
+input {
+    text-align:center;
+    padding:0.3rem;
+    width:60%;
+    height:4vh;
+}
+
+input:valid {
+    outline:none;
+    border:2px solid green;
+    background:lightgreen;
+}
+
+input:invalid {
+    outline:none;
+    border:2px solid red;
+    background-color:lightcoral;
+}
+
+input:hover {
+    border:2px solid green;
+}
+
+button {
+    background-color:blue;
+    border:2px solid blue;
+    color:white;
+    width:5vw;
+    height:4vh;
+    border-radius:10px;
+    font-weight: bold;
+}
+
+button:hover {
+    outline:none;
+    background-color:green;
+    border:2px solid green;
+}
+
 
 /*-----------------------styles for container-------------------*/
 /* styles for container */
