@@ -30,7 +30,7 @@ body {
     gap:0.5rem;
 }
 
-
+/* styles for the h1 heading */
 .heading {
     display:flex;
     justify-content: center;
@@ -40,10 +40,15 @@ body {
     grid-column:1/2;
 }
 
+/* styles for the current location container */
 #current-stats {
     grid-column:2/3;
     display:grid;
     grid-template-rows:repeat(2, 1fr);
+    background-color:aliceblue;
+    border:2px solid silver;
+    height:80%;
+    margin-top:0.5rem;
 }
 
 .current-location, #location-container {
@@ -51,6 +56,11 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+}
+
+#location-container {
+    color:red;
 }
 
 /* styles for form container */
@@ -72,22 +82,26 @@ input {
     height:4vh;
 }
 
+/* styles to highlight valid form input */
 input:valid {
     outline:none;
     border:2px solid green;
     background:lightgreen;
 }
 
+/* styles to highlight invalid form input */
 input:invalid {
     outline:none;
     border:2px solid red;
     background-color:lightcoral;
 }
 
+/* style for input on hover */
 input:hover {
     border:2px solid green;
 }
 
+/* styles for form submit button */
 button {
     background-color:blue;
     border:2px solid blue;
@@ -98,6 +112,7 @@ button {
     font-weight: bold;
 }
 
+/* styles for form submit button on hover */
 button:hover {
     outline:none;
     background-color:green;
